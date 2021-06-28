@@ -1,0 +1,70 @@
+body{
+  font-family: monospace;
+}
+table {
+  border-collapse: collapse;
+  width: auto;
+}
+
+td, th {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 4px;
+}
+
+th{
+  background-color: #dddddd;
+}
+select{
+    border-radius: 5px;
+    height: 30px;
+    font-size: 16px;
+    font-family: monospace;
+}
+img{
+    width: 400px;
+    height: 250px;
+    
+  }
+  .heading{
+    background-color: black;
+  }
+  h1, h2{
+    margin-top: 0;
+    padding: 5px;
+    text-align: center;
+    color:white;
+  }
+  h4{
+    margin-bottom: 0;
+  }
+  
+  figcaption{
+    font-size:15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  #left{
+    display: table-caption;
+  }
+  p {
+    text-align: center;
+  }
+  #method{ font-weight: bold; }
+  a{
+    text-decoration: none;
+    display: grid;
+    text-align: center;
+  }
+  button{
+    font-size: 17px;
+    background-color: #E9EBEC;
+    padding: 6px;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    float: right;
+    margin-right: 5px;
+  }
+  #left #right{
+    width: 50%;
+  }

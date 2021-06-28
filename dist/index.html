@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="heading">
+    <h2>India Air Quality Report - BBC NEWS</h2>
+  </div>
+  
+  
+  <button onclick="change_language('hindi')">Hindi</button>
+  <button onclick="change_language('english')">English</button>
+  
+  <!--Left Content-->
+  <div id="left">
+    <img id="main-image">
+    <figcaption id="caption"></figcaption>
+    <p id="title"></p>
+    <a id="tag"></a>
+  </div>
+
+  <!--Right Content-->
+  <div id="right">
+    <div id="img-descp"></div>
+    <p id="para_1"></p>
+    <p id="para_2"></p>
+    <p id="para_3"></p>
+    <p id="para_4"></p>
+    <p id="method"></p>
+
+    
+    <table>
+      <tr>
+        <th><p id="select_city"></p></th>
+        <th>Air Quality in PM</th>
+        <th>Air Quality in Cigarettes</th>
+      </tr>
+      <tr>
+        <td>
+          <select id="city" onchange="updateCityData()">
+            <option id="c_name" value="" selected> --Select option-- </option>
+          </select>
+        </td>
+        <td><p id="c_aqi"></p></td>
+        <td><p id="c_cigg"></p></td>
+      </tr>
+    </table>
+
+    <div id="method-descp"></div>
+    <p id="para_6"></p>
+    <p id="para_7"></p>
+    <p id="para_8"></p>
+    <p id="para_9"></p>
+    <p id="para_10"></p>
+  </div>
+
+</body>
+
+</html>
