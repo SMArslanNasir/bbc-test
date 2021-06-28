@@ -2,11 +2,15 @@ let url = '../data/english.json';
     let city_data = {};
     
     render_data(url);
+    
+    //display aqi and cigg values
     function updateCityData(){
       let city = document.getElementById('city').value;
       document.getElementById('c_aqi').innerText = city_data.city[city].aqi;
       document.getElementById('c_cigg').innerText = city_data.city[city].cigg;
     }
+
+    //change the url to change language 
     function change_language(lang){
       let url = '../data/english.json';
       if(lang != 'english'){
@@ -14,6 +18,8 @@ let url = '../data/english.json';
       }
       render_data(url);
     }
+
+    //convert javascript object into json string
     function render_data(url){
       fetch(url)
       .then(response => response.json())
@@ -24,6 +30,8 @@ let url = '../data/english.json';
           appendData(parsedObj);
       })
     }
+
+    //read data from json string and populate according to html structure
     function appendData(data) {
       cities = document.getElementById('city');
       cities.innerHTML = '';
@@ -47,18 +55,18 @@ let url = '../data/english.json';
       imgtags.innerText = city_data['article']['byline'] + ' | ' + city_data['article']['date'] + ' | ' + city_data['article']['category'];
       imgtags.href = city_data['article']['url'];
 
-      // Adding Description
+      // show description about article 
       var descp = document.getElementById("descp");
       descp.innerText =   city_data['p_2_value'] + '\n'
                         + city_data['p_3_value'] + '\n'
                         + city_data['p_4_value'] + '\n'
                         + city_data['p_5_value'];
       
-      // Select your city using dropdown
+      // select your city using dropdown
       var selectCity = document.getElementById("select_city");    
       selectCity.innerText = city_data['city_select'];
 
-      // Adding Methodology for Calculation.
+      // methodology for calculation.
       var method_descp = document.getElementById("method-descp");    
       method_descp.innerText =  city_data['method'] + '\n\n'
                               + city_data['p_6_value'] + '\n'
