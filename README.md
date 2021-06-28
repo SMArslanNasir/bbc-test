@@ -10,5 +10,6 @@ JS
 JSON
 
 Prerequisites
+
 Download the project and unzip the folder. Under dist folder, you can find the index file, double-click it and play with project.
 To make changes or edit the code, you may need editor like VSCode.
