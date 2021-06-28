@@ -33,8 +33,6 @@ let url = '../data/english.json';
         option.value = index;
         cities.append(option);
       });
-   
-      var mainContainer = document.getElementById("left");
           
       var img = document.getElementById("main-image");        // Adding image.
       img.src = city_data['image']; 
@@ -50,39 +48,22 @@ let url = '../data/english.json';
       imgtags.href = city_data['article']['url'];
 
       // Adding Description
-      var para1 = document.getElementById("para_1");    
-      para1.innerText = city_data['p_2_value'];
-
-      var para2 = document.getElementById("para_2");    
-      para2.innerText = city_data['p_3_value'];
-
-      var para3 = document.getElementById("para_3");    
-      para3.innerText = city_data['p_4_value'];
-
-      var para4 = document.getElementById("para_4");    
-      para4.innerText = city_data['p_5_value'];
-
-      var method = document.getElementById("method");   
-      method.innerText = city_data['method'];
+      var descp = document.getElementById("descp");
+      descp.innerText =   city_data['p_2_value'] + '\n'
+                        + city_data['p_3_value'] + '\n'
+                        + city_data['p_4_value'] + '\n'
+                        + city_data['p_5_value'];
       
       // Select your city using dropdown
       var selectCity = document.getElementById("select_city");    
       selectCity.innerText = city_data['city_select'];
 
       // Adding Methodology for Calculation.
-      var para6 = document.getElementById("para_6");    
-      para6.innerText = city_data['p_6_value'];
-
-      var para7 = document.getElementById("para_7");    
-      para7.innerText = city_data['p_7_value'];
-
-      var para8 = document.getElementById("para_8");    
-      para8.innerText = city_data['p_8_value'];
-
-      var para9 = document.getElementById("para_9");    
-      para9.innerText = city_data['p_9_value'];
-
-      var para10 = document.getElementById("para_10");    
-      para10.innerText = city_data['p_10_value'];
-
+      var method_descp = document.getElementById("method-descp");    
+      method_descp.innerText =  city_data['method'] + '\n\n'
+                              + city_data['p_6_value'] + '\n'
+                              + city_data['p_7_value'] + '\n'
+                              + city_data['p_8_value'] + '\n'
+                              + city_data['p_9_value'] + '\n'
+                              + city_data['p_10_value'];
     }
