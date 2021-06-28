@@ -1,5 +1,6 @@
 <h3>Getting Started</h3>
-Follow the below steps to get and to run the project on any machine.
+To set the project locally or to run the project, follow the steps provided below.
+<hr/>
 
 <h3>Built With</h3>
 Here are the languages used to built this project.
