@@ -54,13 +54,13 @@ let url = '../data/english.json';
       para1.innerText = city_data['p_2_value'];
 
       var para2 = document.getElementById("para_2");    
-      para1.innerText = city_data['p_3_value'];
+      para2.innerText = city_data['p_3_value'];
 
       var para3 = document.getElementById("para_3");    
-      para1.innerText = city_data['p_4_value'];
+      para3.innerText = city_data['p_4_value'];
 
       var para4 = document.getElementById("para_4");    
-      para1.innerText = city_data['p_5_value'];
+      para4.innerText = city_data['p_5_value'];
 
       var method = document.getElementById("method");   
       method.innerText = city_data['method'];

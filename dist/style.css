@@ -4,6 +4,7 @@ body{
 table {
   border-collapse: collapse;
   width: auto;
+  margin:auto;
 }
 
 td, th {
@@ -45,10 +46,16 @@ img{
     font-weight: bold;
   }
   #left{
-    display: table-caption;
+    float: left;
+    width: 30%;
+  }
+  #right{
+    float: left;
+    width: 70%;
   }
   p {
     text-align: center;
+    padding: 0px 15px;
   }
   #method{ font-weight: bold; }
   a{
@@ -64,7 +71,4 @@ img{
     border-radius: 2px;
     float: right;
     margin-right: 5px;
-  }
-  #left #right{
-    width: 50%;
   }
