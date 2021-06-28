@@ -2,7 +2,7 @@
 Follow the below steps to get and to run the project on any machine.
 
 <h3>Built With</h3>
-Here are a the languages used to built this project.
+Here are the languages used to built this project.
 
 <ul>
   <li>HTML</li>
@@ -12,7 +12,7 @@ Here are a the languages used to built this project.
 </ul>
 
 <h3>Prerequisites</h3>
-To see the running project you need web browser like Chrome, FireFox, Safari, etc.
+To see the running project you need a web browser like Chrome, FireFox, Safari, etc.
 <br/>
 To make changes or edit the code, you may need editor like VSCode.
 
